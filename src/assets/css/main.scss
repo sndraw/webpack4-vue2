@@ -1,0 +1,17 @@
+$media: screen;
+$screen-xs-max: 768px; //<768的设备
+$screen-sm-min: 768px; //>=768的设备
+$screen-md-min: 992px; //>=992的设备
+$screen-lg-min: 1200px; //>=1200的设备
+$bg-color: #ffffff;
+$bg-black-color: #2a2a2a;
+$linker-color: #979797;
+$hover-color: #c8a05a;
+$default-color: #666666;
+$grey-color: #939393;
+$primary-color: #1ea839;
+$warning-color: #f7ba2a;
+$danger-color: #ff4949;
+$line-height: 1.5;
+
+@import './reset.scss';
