@@ -18,14 +18,16 @@ axios.defaults.responseType = 'json'
 let loadingInstance
 axios.interceptors.request.use(
   config => {
-    loadingInstance = Loading.service({fullscreen: true})
+    loadingInstance = Loading.service({
+      fullscreen: true
+    })
     config.headers = {
       'Content-Type': 'application/x-www-form-urlencoded'
     }
     return config
   },
   error => {
-    loadinginstace.close()
+    loadingInstance.close()
     Message.error({
       message: '加载超时'
     })
@@ -42,7 +44,7 @@ axios.interceptors.response.use(
     if (data && data.code == $constants.CODE_NOT_LOGIN) {
       router.push({
         path: '/login',
-        query: { redirect: router.currentRoute.fullPath }
+        query: {redirect: router.currentRoute.fullPath}
       })
       // 报错处理，打断then事件，以免返回数据导致错误判定
       return Promise.reject(data)
