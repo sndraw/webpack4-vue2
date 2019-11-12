@@ -13,7 +13,6 @@ import '@/assets/css/main.scss'
 // 主配置引入
 import config from '@/config'
 
-
 Vue.use(ElementUI)
 
 if (config.mock) {

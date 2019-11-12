@@ -44,7 +44,9 @@ axios.interceptors.response.use(
     if (data && data.code == $constants.CODE_NOT_LOGIN) {
       router.push({
         path: '/login',
-        query: {redirect: router.currentRoute.fullPath}
+        query: {
+          redirect: router.currentRoute.fullPath
+        }
       })
       // 报错处理，打断then事件，以免返回数据导致错误判定
       return Promise.reject(data)
