@@ -35,12 +35,6 @@ npm run hot
 ```
 const config = {
   mock: true,//开发环境可开启mock，api请求指向mock数据（默认指向src/mock文件夹）
-  apiUrl: "//localhost:8081",
-  uploadUrl: "//localhost:8085",
-  defaultImgUrl: "//localhost:8085/data/default.jpg",
-  urlsEnum: {
-    site: '/site'
-  }
   ...
 }
 export  default config
@@ -53,14 +47,6 @@ export  default config
 ```
 const Config = {
     mock: false,//生产环境关闭mock
-    vue: {
-        devtools: false
-    },
-    //http请求时，进行url地址拼接，如 Config.apiUrl+Config.urlsEnum.rank
-    apiUrl: ('https:' == document.location.protocol ? 'https:' : 'http:') + "//www.github.com",
-    urlsEnum: {
-        site: '/site'
-    }
     ...
 };
 export  default config

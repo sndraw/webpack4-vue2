@@ -1,7 +1,7 @@
 {
-  "name": "vue-test",
+  "name": "webpcak4-vue2",
   "version": "1.0.0",
-  "description": "vue test",
+  "description": "webpack4+babel7+vue2+vuex3+vue-router3+element-ui2",
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf node_modules",
@@ -14,8 +14,8 @@
     "build": "node build/build.js"
   },
   "keywords": [
-    "vue",
-    "test"
+    "vue2",
+    "webpack4"
   ],
   "author": "sn",
   "license": "ISC",
