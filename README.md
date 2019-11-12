@@ -25,7 +25,7 @@ npm run hot
 ```
 
 ##### 开发环境访问路径：
->http://localhost:8080
+>http://localhost:8099
 
 #### 4.mock 模拟
 
