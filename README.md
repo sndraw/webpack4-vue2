@@ -1,4 +1,4 @@
-# webpack使用说明
+# webpack使用说明（正式项目的demo删减版，仅供参考学习使用）
 
 #### 1.如无node，安装node
 #### 2.进入目录，安装package.json中的依赖包
