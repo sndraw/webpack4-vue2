@@ -1,7 +1,10 @@
 /**
  * Created by sn on 2019/11/7.
  */
-const modules={
 
+import login from './login'
+
+const modules = {
+  login
 }
-export  default  modules
+export default modules

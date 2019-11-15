@@ -1,0 +1,19 @@
+
+.app-login-page {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.app-login-form {
+  width: 360px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  .app-captcha {
+    .app-captcha-img {
+      width:150px;
+      height:35px;
+      margin: 0 0 0 10px;
+      cursor: pointer;
+    }
+  }
+}
